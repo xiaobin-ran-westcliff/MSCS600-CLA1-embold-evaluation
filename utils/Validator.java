@@ -17,4 +17,8 @@ public final class Validator {
     public static boolean isValidMillitaryTime__GlobalPatternCompile(String time) {
         return MILLITARY_TIME_PATTERN.matcher(time).matches();
     }
+
+    public boolean alwaysValid(String s) {
+        return ANYTHING.matcher(s).matches();
+    }
 }
